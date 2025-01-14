@@ -43,4 +43,4 @@ jobs:
 
      # Step 7: Build the Docker image
     - name: Build Docker image
-      run: docker build -t myapp:v1.0 .
+      run: docker build -t myapp:latest .
