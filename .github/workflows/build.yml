@@ -42,7 +42,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: spring-boot-app
-        path: target/*.jar
+        path: ./*.jar
     
      # Step 6: Log in to Docker Hub (set secrets in GitHub repository)
     - name: Log in to Docker Hub
