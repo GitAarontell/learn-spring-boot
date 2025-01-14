@@ -52,8 +52,3 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t ${{ secrets.DOCKER_USERNAME }}/myapp:v1.0 .
-    # Step 8: Optionally, push the Docker image to Docker Hub
-    - name: Push Docker image to Docker Hub
-      run: |
-        docker push myapp:v1.0
-      if: github.ref == 'refs/heads/main' 
