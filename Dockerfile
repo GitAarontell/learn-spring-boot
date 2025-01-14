@@ -1,4 +1,5 @@
 FROM eclipse-temurin:17-jdk-jammy
-COPY target/learn-spring-boot-0.0.1-SNAPSHOT.jar learn-spring-boot.jar
+WORKDIR /app/
+COPY ./target/*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT [ "java", "-jar", "learn-spring-boot.jar" ]
+ENTRYPOINT [ "java", "-jar", "app.jar" ]
